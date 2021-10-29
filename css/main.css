@@ -37,7 +37,7 @@ a {
 
 /* Container */
 
-.container {
+main {
   background-color: var(--pale-blue);
   background-image: url("../images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
@@ -71,13 +71,15 @@ a {
   padding: 45px 25px;
 }
 
-.summary h2 {
+.summary h1 {
   margin-bottom: 1rem;
   font-weight: 900;
+  font-size: 28px;
 }
 
 .pricing {
-  width: 325px;
+  max-width: 325px;
+  width: 100%;
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
@@ -113,7 +115,8 @@ a {
 }
 
 .action button {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   outline: none;
   border: none;
   border-radius: 8px;
