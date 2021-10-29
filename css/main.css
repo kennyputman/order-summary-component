@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 :root {
-  --pale-blue: hsl(225, 100%, 94%);
-  --bright-blue: hsl(245, 75%, 52%);
-  --very-pale-blue: hsl(225, 100%, 98%);
-  --desat-blue: hsl(224, 23%, 55%);
+  --pale-blue: #e0e8ff;
+  --bright-blue: #3829e0;
+  --very-pale-blue: #f5f7ff;
+  --desat-blue: #7280a7;
   --active-blue: #766cf1;
-  --dark-blue: hsl(223, 47%, 23%);
+  --dark-blue: #1f2f56;
+  --text-pale-blue: #717fa6;
 }
 
 * {
@@ -28,12 +29,6 @@ a {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 700;
   cursor: pointer;
-}
-
-/* Utilities */
-
-.tx-dstb {
-  color: var(--desat-blue);
 }
 
 /* Container */
@@ -69,11 +64,17 @@ main {
 
 .summary {
   text-align: center;
-  padding: 45px 25px;
+  padding: 45px;
+  margin-top: 10px;
+}
+
+.summary p {
+  font-weight: 500;
+  color: var(--text-pale-blue);
 }
 
 .summary h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 28px;
 }
@@ -81,7 +82,7 @@ main {
 .pricing {
   max-width: 325px;
   width: 100%;
-  padding: 0 25px;
+  padding: 10px 25px;
   display: flex;
   justify-content: space-between;
 }
