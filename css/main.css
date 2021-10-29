@@ -5,6 +5,7 @@
   --bright-blue: hsl(245, 75%, 52%);
   --very-pale-blue: hsl(225, 100%, 98%);
   --desat-blue: hsl(224, 23%, 55%);
+  --active-blue: #766cf1;
   --dark-blue: hsl(223, 47%, 23%);
 }
 
@@ -102,8 +103,10 @@ main {
   align-items: center;
 }
 
-.pricing-right a:hover {
-  color: var(--desat-blue);
+.pricing-right a:hover,
+.pricing-right a:focus {
+  color: var(--active-blue);
+  text-decoration: none;
 }
 
 .action {
@@ -131,8 +134,9 @@ main {
   color: var(--very-pale-blue);
 }
 
-.action .payment:hover {
-  background-color: var(--desat-blue);
+.payment:hover,
+.payment:focus {
+  background-color: var(--active-blue);
 }
 
 .action .cancel {
