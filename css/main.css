@@ -104,6 +104,9 @@ main {
   align-items: center;
 }
 
+.pricing-right a {
+  outline: none;
+}
 .pricing-right a:hover,
 .pricing-right a:focus {
   color: var(--active-blue);
